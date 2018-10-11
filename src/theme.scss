@@ -1,0 +1,131 @@
+body,
+html {
+  font-family: 'Source Sans Pro', 'Roboto', sans-serif;
+  background: #1c1f26;
+}
+
+#topbar,
+#sidebar,
+.panel,
+.dropdown-menu,
+.modal-content,
+#topbar .actions {
+  background: #15171c;
+}
+
+#topbar .actions .glyphicon {
+  font-size: 15px;
+}
+
+td.time {
+  position: absolute;
+  right: 0;
+}
+
+td.prefix {
+  padding: 0 10px 0 0;
+  font-weight: 600;
+  overflow: hidden;
+  text-align: right;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 10em;
+  border: 0;
+
+  @media(max-width: 600px) {
+    width: 6em;
+  }
+
+  .cwf-yellow,
+  .cwf-green,
+  .cfw-red,
+  .cfw-lightgreen {
+    display: none;
+  }
+
+  a {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    display: block;
+    text-align: right;
+  }
+
+  span.cwf-default {
+    @media (max-width: 600px) {
+      display: block;
+      padding-left: 5px;
+    }
+  }
+}
+
+#bufferlines td.message {
+  text-align: left;
+  padding-right: 12% !important;
+
+  span.text.cwf-default {
+    line-height: 1.4;
+
+    @media (max-width: 600px) {
+      display: block;
+      padding-left: 5px;
+    }
+  }
+
+  .cob-chat_delimiters {
+    display: inline !important;
+  }
+}
+
+.cob-chat_prefix_join,
+.cob-chat_prefix_quit {
+  display: none;
+}
+
+body #bufferlines tr.bufferline {
+  position: relative;
+  display: flex;
+  display: -webkit-flex;
+  flex-flow: row;
+  -webkit-flex-flow: row;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+tr.readmarker {
+  display: block;
+  width: 100%;
+
+  td {
+    width: 100%;
+    display: block;
+  }
+}
+
+#readmarker {
+  margin-bottom: 2px;
+  width: 100%;
+  display: block;
+}
+
+#sendMessage {
+  height: 40px;
+}
+
+label[for="imgur-upload"] {
+  display: none;
+}
+
+@media (max-width: 770px) {
+  #topbar .brand {
+    display: none;
+  }
+
+  td.time {
+    top: 3px;
+  }
+
+  #sidebar {
+    transform: translate(-200px, 0);
+    -webkit-transform: translate(-200px, 0);
+  }
+}
